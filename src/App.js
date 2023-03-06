@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Nav from './Nav.js';
 import Header from "./Header";
 import Footer from "./Footer";
 import Employees from "./Employees";
@@ -127,6 +128,7 @@ function App() {
 
   return (
     <Router>
+      <Nav/>
       <Header
         selectedTeam={selectedTeam}
         teamMemberCount={
